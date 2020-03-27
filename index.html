@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1 id="title"> My survey form </h1>
+  <p id="description"> Thank you for taking my survey </p>
+
+  <!-- This class is used to style the entire form -->
+  <form id="survey-form" class="survey-form">
+
+    <!-- The name input -->
+    <label id="name-label" for="name"> Name</label>
+
+    <input type="text" for="name" id="name" class="text" placeholder="Name" required />
+    <!-- end of name input -->
+
+    <!-- email input -->
+    <label id="email-label" for="email">
+      Email </label>
+    <input type="email" id="email" placeholder="Email" class="text" required>
+    <!-- end of email input -->
+
+    <!-- Age input -->
+    <p id="age"> Enter your age (optional) </p>
+    <label id="number-label" for="numer" </label> <input type="number" min="10" max="99" id="number" placeholder="Age"
+      class="text" required>
+      <!-- end of age input -->
+      <!-- Select dropdown start -->
+      <p id="job">What is your current job?</p>
+
+      <select id="dropdown" for="job">
+        <option selected disabled> Select job </option>
+        <option> Programmer </option>
+        <option> Recruiter </option>
+        <option> Rather not say </option>
+        <option> Other </option>
+      </select>
+      <!-- end of select dropdown box -->
+
+      <!-- The radio input -->
+
+      <div class="checkboxes">
+        <p> What do you think of my website? </p>
+        <label>
+          <input type="radio" name="Thoughts" value="Good"> Good </> </label> <br>
+        <label>
+          <input type="radio" name="Thoughts" value="Okay"> Okay</> </label> <br>
+
+        <label> <input type="radio" name="Thoughts" value="Bad"> Bad</> </label>
+      </div>
+      <!-- Radio end -->
+
+      <!-- checkboxes for programming language -->
+      <p> What programming languages do you use most often? </p>
+      <label for="python"> <input type="checkbox" name="python" value="python"> Python </label> <br>
+
+      <label for="Javascript"> <input type="checkbox" name="javascript" value="Javascript"> Javascript </label> <br>
+
+      <label for="C+"><input type="checkbox" name="C+" Value="C+"> C+ </label> <br>
+
+      <label for="java"><input type="checkbox" name="radio" value="Java"> Java </label> <br>
+
+      <label for="Other"><input type="checkbox" name="Other" value="other"> Other </label> <br>
+      <!-- End of checkboxes -->
+      <!-- textbox -->
+      <p> Any other thoughts? </p>
+      <textarea name="Other-thoughts" id="text-area" placeholder="Enter your thoughts here..."></textarea>
+      <!-- end of textbox-->
+
+      <button id="submit" type="Submit">Submit</button>
+</body>
+</form>
+</body>
+
+</html>
